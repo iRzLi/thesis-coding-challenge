@@ -131,3 +131,15 @@
         width: 90%;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .content {
+        justify-content: space-around;
+    }
+    .contentText{
+        width: 30%;
+    }
+    .contentForm {
+        width: 30%;
+    }
+}
