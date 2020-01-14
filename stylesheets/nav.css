@@ -1,0 +1,51 @@
+.options li {
+    padding: 0px 30px;
+}
+
+.mobile {
+    display: none;
+}
+.mobileNavbar {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .mobileNavbar {
+        display: flex;
+    }
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.active {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.closeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#mobileClose {
+    cursor: pointer;
+    font-family: RobotoCondensed-Bold;
+}
+
+.mobileOptions {
+    width: 100%;
+    position: relative;
+}
+
+.mobileOptions > li {
+    padding: 5px 0px;
+}

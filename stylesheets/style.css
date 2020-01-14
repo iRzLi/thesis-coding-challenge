@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+    color: #ffffff;
+    font-family: Roboto-Medium;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/carving.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}
+
+.opacBlack5{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miniSpacing {
+    padding: 20px 40px;
+}
+
+.title{
+    color: #ffffff;
+    font-family: RobotoCondensed-Regular;
+    font-size: 2rem;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.options{
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto-Light;
+}
+
+.menu{
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/menu-white.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}

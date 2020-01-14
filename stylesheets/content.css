@@ -1,0 +1,133 @@
+.content {
+    padding: 40px 80px;
+}
+.contentText {
+    width: 40%;
+}
+
+.contentText > .title {
+    font-size: 3.5rem;
+    padding-bottom: 16px;
+    line-height: 1.15em;
+}
+
+.contentText > .text {
+    font-family: Roboto-Light;
+    opacity: 0.75;
+    line-height: 1.5em; 
+}
+
+.contentForm {
+    width: 40%;
+}
+
+.contentForm > .form {
+    margin: 40px 0px;
+    width: 100%;
+    padding: 0px 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contentForm > .form > input {
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form input:focus, .form input:active {
+    outline:none;
+}
+
+.contentForm > .form > input:nth-child(2) {
+    border-top: 0px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.5);
+}
+
+.contentForm > .form > .submit {
+    padding: 15px;
+    cursor: pointer;
+    border: 2px solid #2B99EB;
+    width: 100%;
+    text-align: center;
+    background-color: #2B99EB;
+}
+
+::placeholder {
+     color: rgba(255, 255, 255, 0.6);
+}
+
+.contentForm > .form > .submit:hover {
+    -webkit-animation-name: hoverSubmit;
+    -webkit-animation-duration: 0.5s;
+    animation-name: hoverSubmit;
+    animation-duration: 0.5s;
+    background-color: #ffffff;
+    color: #2B99EB;
+    border: 2px solid #ffffff;
+}
+
+@keyframes hoverSubmit {
+    from {
+        background-color: #2B99EB;
+        color: #ffffff;
+        border: 2px solid #2B99EB;
+    }
+    to {
+        background-color: #ffffff;
+        color: #2B99EB;
+        border: 2px solid #ffffff;
+    }
+} 
+
+.contentForm > .text {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.formFooter > .text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto-Light;
+    padding-bottom: 8px;
+}
+
+.formFooter > .tos {
+    font-size: 12px;
+    font-family: Roboto-Light;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contentText{
+        padding-top: 80px;
+        width: 80%;
+    }
+    .contentForm {
+        width: 80%;
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contentText > .title {
+        font-size: 3rem;
+    }
+    .contentText{
+        width: 90%;
+    }
+    .contentForm {
+        width: 90%;
+    }
+}
